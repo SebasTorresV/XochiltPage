@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Artesanías</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Artesanías Xochilt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="carousel">
+            <div><img src="imgIndex/1 (1).heic" alt="Imagen 1"></div>
+            <div><img src="imgIndex/1 (2).heic" alt="Imagen 2"></div>
+            <div><img src="imgIndex/1 (3).heic" alt="Imagen 3"></div>
+        </div>
+        <h2>Bienvenidos a nuestra tienda de artesanías</h2>
+        <p>Descubre las mejores artesanías hechas a mano con amor y dedicación.</p>
+    </section>
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <!-- Aquí puedes agregar tarjetas de productos -->
+    </section>
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una tienda dedicada a la venta de artesanías hechas a mano por artesanos locales.</p>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tienda de Artesanías Xochilt. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+</html>
